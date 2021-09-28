@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+<header>
+    <title>Programação Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="../../css/adminlte.min.css"  type="text/css">
+    <link rel="stylesheet" href="../../icons/fontawesome-free/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</header>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+    
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+            <a href="../../../index.html" class="nav-link">Início</a>
+            </li>
+        </ul>
+    
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+            <!-- Navbar Search -->
+            <li class="nav-item">
+            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                <i class="fas fa-search"></i>
+            </a>
+            <div class="navbar-search-block">
+                <form class="form-inline">
+                <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                    <button class="btn btn-navbar" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    </div>
+                </div>
+                </form>
+            </div>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                <i class="fas fa-expand-arrows-alt"></i>
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                <i class="fas fa-th-large"></i>
+            </a>
+            </li>
+        </ul>
+        </nav>
+        <!-- /.navbar -->
+    
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        
+        <a href="../../../index.html" class="brand-text brand-link font-weight-light">Sistema de Reparos</a>
+        
+    
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                        with font-awesome or any other icon font library -->
+                    <li class="nav-item">
+                        <a href="../cadastro_cliente/cadastro_clientes.html" class="nav-link">
+                            <i class="fas fa-user-plus nav-icon"></i>
+                            <p>Novo Usuário</p>
+                        </a>
+                    </li>              
+                    <li class="nav-item">
+                        <a href="../lista_clientes/lista_clientes.html" class="nav-link">
+                            <i class="fas fa-user-friends nav-icon"></i>
+                            <p>Usuários Cadastrados</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cadastro_itens.html" class="nav-link">
+                            <i class="fas fa-plus-square nav-icon"></i>
+                            <p>Cadastrar Itens</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../lista_itens/lista_itens.html" class="nav-link">
+                            <i class="fas fa-list nav-icon"></i>
+                            <p>Lista de Itens</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="fas fa-sign-out-alt nav-icon"></i>
+                          <p>Sair</p>
+                        </a>
+                      </li>
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+        </aside>
+    
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                <h1 class="m-0">Novo Item</h1>
+                </div><!-- /.col -->
+                <!-- /.col -->
+            </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+    
+        <!-- Main content -->
+        <div class="content">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome do Equipamento</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="patrimonio" class="form-label">Patrimônio</label>
+                        <input type="text" class="form-control" id="patrimonio">
+                    </div>
+                    <div class="mb-3">
+                        <label for="marca" class="form-label">Marca</label>
+                        <input type="text" class="form-control" id="marca">
+                    </div>
+                    <div class="mb-3">
+                        <label for="modelo" class="form-label">Modelo</label>
+                        <input type="text" class="form-control" id="modelo">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                </div>
+            </div>
+            <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+    
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+        <div class="p-3">
+            <h5>Title</h5>
+            <p>Sidebar content</p>
+        </div>
+        </aside>
+        <!-- /.control-sidebar -->
+    
+        <!-- Main Footer -->
+        <footer class="main-footer">
+        <!-- To the right -->
+        <div class="float-right d-none d-sm-inline">
+            Anything you want
+        </div>
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+    
+    <!-- REQUIRED SCRIPTS -->
+    
+    <!-- jQuery -->
+    <script src="../../js/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../js/adminlte.min.js"></script>
+</body>
+</html>
+
+
